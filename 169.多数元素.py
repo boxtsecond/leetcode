@@ -50,7 +50,7 @@
 # @lc code=start
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        bingo, times = nums[0], 0
+        bingo, times = nums[0], 1
         for i in range(1, len(nums)):
             if bingo == nums[i]:
                 times += 1
